@@ -93,9 +93,6 @@ This project provides an **in-depth analysis of sales performance and stock mana
 **👨‍💻 Stephane-OC**  
 Data Analyst & Web Developer — Passionate about clean data, automation, and storytelling through analytics.  
 
-📬 [Contact me on GitHub](https://github.com/)  
-🌍 Project maintained as part of **OpenClassrooms – Data Analyst Program**  
-
 ---
 
 ## 🧾 License
