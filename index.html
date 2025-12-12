@@ -7884,6 +7884,150 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6b10aeda">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_web</span><span class="p">[</span><span class="n">df_web</span><span class="p">[</span><span class="s2">"sku"</span><span class="p">]</span> <span class="o">==</span> <span class="mi">11862</span><span class="p">]</span>
+<span class="c1">#garder que les post type = products 1 - ERP / 2 - LIAISON / </span>
+<span class="c1"># 3 - WEB enlever les doublons par rapport à post_type et je garde post_type = product donc je suis censé me retrouver avec 714 lignes est après je fais mes jointures</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>sku</th>
+<th>virtual</th>
+<th>downloadable</th>
+<th>rating_count</th>
+<th>average_rating</th>
+<th>total_sales</th>
+<th>tax_status</th>
+<th>tax_class</th>
+<th>post_author</th>
+<th>post_date</th>
+<th>post_date_gmt</th>
+<th>post_content</th>
+<th>product_type</th>
+<th>post_title</th>
+<th>post_excerpt</th>
+<th>post_status</th>
+<th>comment_status</th>
+<th>ping_status</th>
+<th>post_password</th>
+<th>post_name</th>
+<th>post_modified</th>
+<th>post_modified_gmt</th>
+<th>post_content_filtered</th>
+<th>post_parent</th>
+<th>guid</th>
+<th>menu_order</th>
+<th>post_type</th>
+<th>post_mime_type</th>
+<th>comment_count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>11862</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+<td>3.0</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>2.0</td>
+<td>2018-02-12 13:46:23</td>
+<td>2018-02-12 12:46:23</td>
+<td>NaN</td>
+<td>Vin</td>
+<td>Gilles Robin Hermitage Rouge 2012</td>
+<td>NaN</td>
+<td>publish</td>
+<td>closed</td>
+<td>closed</td>
+<td>NaN</td>
+<td>gilles-robin-hermitage-2012</td>
+<td>2019-01-31 12:12:56</td>
+<td>2019-01-31 11:12:56</td>
+<td>NaN</td>
+<td>0.0</td>
+<td>https://www.bottle-neck.fr/wp-content/uploads/...</td>
+<td>0.0</td>
+<td>attachment</td>
+<td>image/jpeg</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>1001</th>
+<td>11862</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+<td>3.0</td>
+<td>taxable</td>
+<td>NaN</td>
+<td>2.0</td>
+<td>2018-02-12 13:46:23</td>
+<td>2018-02-12 12:46:23</td>
+<td>NaN</td>
+<td>Vin</td>
+<td>Gilles Robin Hermitage Rouge 2012</td>
+<td>Une robe rubis intense avec une très belle bri...</td>
+<td>publish</td>
+<td>closed</td>
+<td>closed</td>
+<td>NaN</td>
+<td>gilles-robin-hermitage-2012</td>
+<td>2019-01-31 12:12:56</td>
+<td>2019-01-31 11:12:56</td>
+<td>NaN</td>
+<td>0.0</td>
+<td>https://www.bottle-neck.fr/?post_type=product&amp;...</td>
+<td>0.0</td>
+<td>product</td>
+<td>NaN</td>
+<td>0.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a25b2319">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7964,7 +8108,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Afficher les dimensions du dataset</span>
@@ -8000,7 +8144,7 @@ Le tableau comporte <span style="color:#ffcc00; font-weight:bold;">6</span> colo
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Consulter le nombre de colonnes</span>
@@ -8054,7 +8198,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Afficher les 5 premières lignes de la table</span>
@@ -8069,7 +8213,7 @@ dtype: int64
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8155,7 +8299,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Vérifier si il y a des lignes en doublon dans la colonne product_id</span>
@@ -8170,7 +8314,7 @@ dtype: int64
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>np.int64(0)</pre>
 </div>
@@ -8182,7 +8326,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Afficher les valeurs distinctes de la colonne stock_status</span>
@@ -8220,7 +8364,7 @@ Name: count, dtype: int64
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8600,7 +8744,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Création d'une colonne "stock_status_2"</span>
@@ -8624,7 +8768,7 @@ Name: count, dtype: int64
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9004,7 +9148,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Vérifions que les 2 colonnes sont identiques:</span>
@@ -9025,7 +9169,7 @@ Name: count, dtype: int64
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9107,7 +9251,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Calcul de la somme des valeurs True (1) et False (0)</span>
@@ -9172,7 +9316,7 @@ Nombre total de lignes : 825
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Identifier les lignes où les valeurs diffèrent</span>
@@ -9272,7 +9416,7 @@ Nombre total de lignes : 825
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Correction des incohérences entre stock_status, stock_status_2 et stock_quantity</span>
@@ -9351,7 +9495,7 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Analyse exploratoire de chaque variable du fichier erp.xlsx</span>
@@ -9563,7 +9707,7 @@ et <span style="color:#ffcc00;font-weight:bold;">6</span> colonnes.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">###############</span>
@@ -9637,7 +9781,7 @@ width:fit-content; margin:30px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Correction des incohérences détectées dans la variable "price"</span>
@@ -9717,7 +9861,7 @@ Les valeurs manquantes ont été remplacées et les prix négatifs ajustés à <
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#####################</span>
@@ -9835,7 +9979,7 @@ width:fit-content; margin:30px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Correction des incohérences dans la variable "stock_quantity"</span>
@@ -9919,7 +10063,7 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Vérification de la colonne onsale_web et des valeurs qu'elle contient. Que signifient-elles?</span>
@@ -9958,7 +10102,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Quelles sont les colonnes à conserver selon vous?</span>
@@ -9990,7 +10134,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Supprimer la colonne comportant le libellé "stock_status_2" car elle est redondante </span>
@@ -10067,7 +10211,7 @@ width:fit-content; margin:30px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">######################</span>
@@ -10146,7 +10290,7 @@ width:fit-content; margin:30px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Dimension du dataset</span>
@@ -10191,12 +10335,154 @@ et <span style="color:#ffcc00;font-weight:bold;">29</span> colonnes.</p>
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=46c7ae20">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_web</span><span class="p">[</span><span class="n">df_web</span><span class="p">[</span><span class="s2">"sku"</span><span class="p">]</span> <span class="o">==</span> <span class="mi">16326</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>sku</th>
+<th>virtual</th>
+<th>downloadable</th>
+<th>rating_count</th>
+<th>average_rating</th>
+<th>total_sales</th>
+<th>tax_status</th>
+<th>tax_class</th>
+<th>post_author</th>
+<th>post_date</th>
+<th>post_date_gmt</th>
+<th>post_content</th>
+<th>product_type</th>
+<th>post_title</th>
+<th>post_excerpt</th>
+<th>post_status</th>
+<th>comment_status</th>
+<th>ping_status</th>
+<th>post_password</th>
+<th>post_name</th>
+<th>post_modified</th>
+<th>post_modified_gmt</th>
+<th>post_content_filtered</th>
+<th>post_parent</th>
+<th>guid</th>
+<th>menu_order</th>
+<th>post_type</th>
+<th>post_mime_type</th>
+<th>comment_count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>1146</th>
+<td>16326</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+<td>5.0</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>2.0</td>
+<td>2019-04-18 11:32:46</td>
+<td>2019-04-18 09:32:46</td>
+<td>NaN</td>
+<td>Vin</td>
+<td>Camin Larredya Jurançon Moelleux Au Capcéu 2018</td>
+<td>NaN</td>
+<td>publish</td>
+<td>closed</td>
+<td>closed</td>
+<td>NaN</td>
+<td>camin-larredya-jurancon-moelleux-capceu-2018</td>
+<td>2020-08-27 09:24:46</td>
+<td>2020-08-27 07:24:46</td>
+<td>NaN</td>
+<td>0.0</td>
+<td>https://www.bottle-neck.fr/wp-content/uploads/...</td>
+<td>0.0</td>
+<td>attachment</td>
+<td>image/jpeg</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>1508</th>
+<td>16326</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0.0</td>
+<td>5.0</td>
+<td>taxable</td>
+<td>NaN</td>
+<td>2.0</td>
+<td>2019-04-18 11:32:46</td>
+<td>2019-04-18 09:32:46</td>
+<td>NaN</td>
+<td>Vin</td>
+<td>Camin Larredya Jurançon Moelleux Au Capcéu 2018</td>
+<td>Sur le millésime 2017, Au Capceu du domaine Ca...</td>
+<td>publish</td>
+<td>closed</td>
+<td>closed</td>
+<td>NaN</td>
+<td>camin-larredya-jurancon-moelleux-capceu-2018</td>
+<td>2020-08-27 09:24:46</td>
+<td>2020-08-27 07:24:46</td>
+<td>NaN</td>
+<td>0.0</td>
+<td>https://www.bottle-neck.fr/?post_type=product&amp;...</td>
+<td>0.0</td>
+<td>product</td>
+<td>NaN</td>
+<td>0.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0b70a8da">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Consulter le nombre de colonnes</span>
@@ -10355,23 +10641,25 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Selon vous, quelles sont les colonnes à conserver ?</span>
 <span class="c1"># Colonnes pertinentes à conserver</span>
 <span class="n">colonnes_a_conserver</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s2">"sku"</span><span class="p">,</span>              <span class="c1"># identifiant unique du produit</span>
-    <span class="s2">"post_title"</span><span class="p">,</span>       <span class="c1"># nom ou titre du produit</span>
-    <span class="s2">"post_content"</span><span class="p">,</span>     <span class="c1"># description du produit</span>
-    <span class="s2">"price"</span><span class="p">,</span>            <span class="c1"># (si elle existe plus bas, on vérifiera)</span>
-    <span class="s2">"total_sales"</span><span class="p">,</span>      <span class="c1"># nombre de ventes</span>
-    <span class="s2">"average_rating"</span><span class="p">,</span>   <span class="c1"># note moyenne</span>
-    <span class="s2">"rating_count"</span><span class="p">,</span>     <span class="c1"># nombre d’avis</span>
-    <span class="s2">"post_status"</span><span class="p">,</span>      <span class="c1"># statut du produit (publish, draft…)</span>
-    <span class="s2">"tax_class"</span><span class="p">,</span>        <span class="c1"># classe de taxe</span>
-    <span class="s2">"product_type"</span>      <span class="c1"># type de produit (simple, variable…)</span>
+    <span class="s2">"sku"</span><span class="p">,</span>
+    <span class="s2">"post_title"</span><span class="p">,</span>
+    <span class="s2">"post_content"</span><span class="p">,</span>
+    <span class="s2">"price"</span><span class="p">,</span>
+    <span class="s2">"total_sales"</span><span class="p">,</span>
+    <span class="s2">"average_rating"</span><span class="p">,</span>
+    <span class="s2">"rating_count"</span><span class="p">,</span>
+    <span class="s2">"post_status"</span><span class="p">,</span>
+    <span class="s2">"tax_class"</span><span class="p">,</span>
+    <span class="s2">"product_type"</span><span class="p">,</span>
+    <span class="s2">"post_type"</span>
 <span class="p">]</span>
+
 <span class="c1"># Sélection des colonnes présentes (certaines peuvent ne pas exister)</span>
 <span class="n">colonnes_existantes</span> <span class="o">=</span> <span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">colonnes_a_conserver</span> <span class="k">if</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">df_web</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
 <span class="n">df_web</span> <span class="o">=</span> <span class="n">df_web</span><span class="p">[</span><span class="n">colonnes_existantes</span><span class="p">]</span>
@@ -10389,7 +10677,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>✅ Colonnes conservées : ['sku', 'post_title', 'post_content', 'total_sales', 'average_rating', 'rating_count', 'post_status', 'tax_class', 'product_type']
+<pre>✅ Colonnes conservées : ['sku', 'post_title', 'post_content', 'total_sales', 'average_rating', 'rating_count', 'post_status', 'tax_class', 'product_type', 'post_type']
 </pre>
 </div>
 </div>
@@ -10400,7 +10688,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Si vous avez défini des colonnes à supprimer, effectuer l'opération</span>
@@ -10420,7 +10708,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>🧹 Colonnes restantes après nettoyage : ['sku', 'post_title', 'post_content', 'total_sales', 'average_rating', 'rating_count', 'post_status', 'tax_class', 'product_type']
+<pre>🧹 Colonnes restantes après nettoyage : ['sku', 'post_title', 'post_content', 'total_sales', 'average_rating', 'rating_count', 'post_status', 'tax_class', 'product_type', 'post_type']
 </pre>
 </div>
 </div>
@@ -10431,7 +10719,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Visualiser les premiers SKU</span>
@@ -10450,7 +10738,7 @@ dtype: int64</pre>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"⚠️ </span><span class="si">{</span><span class="n">nb_erreurs</span><span class="si">}</span><span class="s2"> valeur(s) ne respectent pas la règle de codification.</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="n">nb_erreurs</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="n">display</span><span class="p">(</span><span class="n">erreurs_sku</span><span class="p">[[</span><span class="s2">"sku"</span><span class="p">,</span> <span class="s2">"post_title"</span><span class="p">,</span> <span class="s2">"post_status"</span><span class="p">]])</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">erreurs_sku</span><span class="p">[[</span><span class="s2">"sku"</span><span class="p">,</span> <span class="s2">"post_title"</span><span class="p">,</span> <span class="s2">"post_content"</span><span class="p">,</span> <span class="s2">"post_status"</span><span class="p">,</span> <span class="s2">"post_type"</span><span class="p">]])</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"✅ Tous les codes SKU respectent la règle de codification."</span><span class="p">)</span>
 </pre></div>
@@ -10516,12 +10804,16 @@ Name: sku, dtype: object</pre>
 <th></th>
 <th>sku</th>
 <th>post_title</th>
+<th>post_content</th>
 <th>post_status</th>
+<th>post_type</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th>8</th>
+<td>NaN</td>
+<td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
@@ -10531,9 +10823,13 @@ Name: sku, dtype: object</pre>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
 </tr>
 <tr>
 <th>30</th>
+<td>NaN</td>
+<td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
@@ -10543,9 +10839,13 @@ Name: sku, dtype: object</pre>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
 </tr>
 <tr>
 <th>41</th>
+<td>NaN</td>
+<td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
@@ -10555,9 +10855,13 @@ Name: sku, dtype: object</pre>
 <td>...</td>
 <td>...</td>
 <td>...</td>
+<td>...</td>
+<td>...</td>
 </tr>
 <tr>
 <th>1384</th>
+<td>NaN</td>
+<td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
@@ -10567,9 +10871,13 @@ Name: sku, dtype: object</pre>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
 </tr>
 <tr>
 <th>1432</th>
+<td>NaN</td>
+<td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
@@ -10579,16 +10887,20 @@ Name: sku, dtype: object</pre>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
 </tr>
 <tr>
 <th>1457</th>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
 </tr>
 </tbody>
 </table>
-<p>85 rows × 3 columns</p>
+<p>85 rows × 5 columns</p>
 </div>
 </div>
 </div>
@@ -10599,10 +10911,10 @@ Name: sku, dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Si vous avez identifié des codes articles ne respectant pas la régle de codification, consultez-les</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Si vous avez identifié des codes articles ne respectant pas la régle de codification, consultez-les</span>
 <span class="c1"># On considère qu'un SKU valide contient uniquement des lettres, chiffres, tirets ou underscores</span>
 <span class="c1"># Identifier les SKU invalides : NaN, vides ou contenant des caractères non conformes</span>
 <span class="n">erreurs_sku</span> <span class="o">=</span> <span class="n">df_web</span><span class="p">[</span>
@@ -10613,7 +10925,7 @@ Name: sku, dtype: object</pre>
 
 <span class="k">if</span> <span class="ow">not</span> <span class="n">erreurs_sku</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"⚠️ </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">erreurs_sku</span><span class="p">)</span><span class="si">}</span><span class="s2"> article(s) présentent un code SKU incorrect ou manquant :"</span><span class="p">)</span>
-    <span class="n">display</span><span class="p">(</span><span class="n">erreurs_sku</span><span class="p">[[</span><span class="s2">"sku"</span><span class="p">,</span> <span class="s2">"post_title"</span><span class="p">,</span> <span class="s2">"post_status"</span><span class="p">]])</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">erreurs_sku</span><span class="p">[[</span><span class="s2">"sku"</span><span class="p">,</span> <span class="s2">"post_title"</span><span class="p">,</span> <span class="s2">"post_status"</span><span class="p">,</span> <span class="s2">"post_type"</span><span class="p">]])</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"✅ Tous les codes SKU respectent la règle de codification."</span><span class="p">)</span>
 </pre></div>
@@ -10656,11 +10968,13 @@ Name: sku, dtype: object</pre>
 <th>sku</th>
 <th>post_title</th>
 <th>post_status</th>
+<th>post_type</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th>8</th>
+<td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
@@ -10670,9 +10984,11 @@ Name: sku, dtype: object</pre>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
+<td>NaN</td>
 </tr>
 <tr>
 <th>30</th>
+<td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
@@ -10682,9 +10998,11 @@ Name: sku, dtype: object</pre>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
+<td>NaN</td>
 </tr>
 <tr>
 <th>41</th>
+<td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
@@ -10694,9 +11012,11 @@ Name: sku, dtype: object</pre>
 <td>...</td>
 <td>...</td>
 <td>...</td>
+<td>...</td>
 </tr>
 <tr>
 <th>1384</th>
+<td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
@@ -10706,9 +11026,11 @@ Name: sku, dtype: object</pre>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
+<td>NaN</td>
 </tr>
 <tr>
 <th>1432</th>
+<td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
@@ -10718,16 +11040,18 @@ Name: sku, dtype: object</pre>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
+<td>NaN</td>
 </tr>
 <tr>
 <th>1457</th>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
+<td>NaN</td>
 </tr>
 </tbody>
 </table>
-<p>85 rows × 3 columns</p>
+<p>85 rows × 4 columns</p>
 </div>
 </div>
 </div>
@@ -10743,8 +11067,8 @@ Name: sku, dtype: object</pre>
 <div style="background:#FFA726; color:black; padding:15px 40px; border-radius:10px;
 font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; margin:30px auto;">
 <b>Résultat :</b><br/>
-⚠️ Des SKU non conformes ou manquants ont été détectés.<br/>
-📋 Ils seront traités ou remplacés dans les étapes suivantes.
+🚨 <b>85 produits</b> n'ont pas de code SKU valide ou renseigné.<br/>
+🧩 Ils ont été exclus du jeu de données pour garantir la cohérence de l'analyse.
 </div>
 </div>
 </div>
@@ -10754,7 +11078,7 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Identifier les lignes sans code article</span>
@@ -10762,7 +11086,7 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"🚨 Nombre de produits sans code article : </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">articles_sans_sku</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="ow">not</span> <span class="n">articles_sans_sku</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
-    <span class="n">display</span><span class="p">(</span><span class="n">articles_sans_sku</span><span class="p">[[</span><span class="s2">"post_title"</span><span class="p">,</span> <span class="s2">"product_type"</span><span class="p">,</span> <span class="s2">"post_status"</span><span class="p">]])</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">articles_sans_sku</span><span class="p">[[</span><span class="s2">"sku"</span><span class="p">,</span> <span class="s2">"post_title"</span><span class="p">,</span> <span class="s2">"product_type"</span><span class="p">,</span> <span class="s2">"post_status"</span><span class="p">,</span> <span class="s2">"post_type"</span><span class="p">]])</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"✅ Tous les articles ont un code SKU renseigné."</span><span class="p">)</span>
 </pre></div>
@@ -10802,14 +11126,18 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 <thead>
 <tr style="text-align: right;">
 <th></th>
+<th>sku</th>
 <th>post_title</th>
 <th>product_type</th>
 <th>post_status</th>
+<th>post_type</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th>8</th>
+<td>NaN</td>
+<td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
@@ -10819,9 +11147,13 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
 </tr>
 <tr>
 <th>30</th>
+<td>NaN</td>
+<td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
@@ -10831,9 +11163,13 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
 </tr>
 <tr>
 <th>41</th>
+<td>NaN</td>
+<td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
@@ -10843,9 +11179,13 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 <td>...</td>
 <td>...</td>
 <td>...</td>
+<td>...</td>
+<td>...</td>
 </tr>
 <tr>
 <th>1384</th>
+<td>NaN</td>
+<td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
@@ -10855,9 +11195,13 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
 </tr>
 <tr>
 <th>1432</th>
+<td>NaN</td>
+<td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
@@ -10867,16 +11211,20 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
 </tr>
 <tr>
 <th>1457</th>
 <td>NaN</td>
 <td>NaN</td>
 <td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
 </tr>
 </tbody>
 </table>
-<p>85 rows × 3 columns</p>
+<p>85 rows × 5 columns</p>
 </div>
 </div>
 </div>
@@ -10887,18 +11235,20 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Pour les codes articles identifiés, réaliser une analyse et définir l'action à entreprendre</span>
-<span class="k">if</span> <span class="ow">not</span> <span class="n">articles_sans_sku</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"📊 Analyse des articles sans code :"</span><span class="p">)</span>
-    <span class="n">display</span><span class="p">(</span><span class="n">articles_sans_sku</span><span class="p">[</span><span class="s2">"post_status"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Exclure les produits sans SKU ou invalides</span>
+<span class="n">df_web_clean</span> <span class="o">=</span> <span class="n">df_web</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">💡 Action recommandée :"</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"🧩 Vérifier ces produits dans la base WooCommerce et générer un SKU unique pour chacun."</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"✅ Aucun article à corriger."</span><span class="p">)</span>
+<span class="c1"># Identifier les lignes à garder (celles qui ont un SKU non nul et non vide)</span>
+<span class="n">df_web_clean</span> <span class="o">=</span> <span class="n">df_web</span><span class="p">[</span><span class="o">~</span><span class="p">(</span><span class="n">df_web</span><span class="p">[</span><span class="s2">"sku"</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span> <span class="o">|</span> <span class="p">(</span><span class="n">df_web</span><span class="p">[</span><span class="s2">"sku"</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s2">""</span><span class="p">))]</span>
+
+<span class="c1"># Vérification et affichage des résultats</span>
+<span class="n">produits_exclus</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_web</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_web_clean</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"⚠️ </span><span class="si">{</span><span class="n">produits_exclus</span><span class="si">}</span><span class="s2"> produits sans SKU ont été exclus."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"📊 Nouveau total de produits conservés : </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df_web_clean</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"🔹 Nombre de SKU uniques restants : </span><span class="si">{</span><span class="n">df_web_clean</span><span class="p">[</span><span class="s1">'sku'</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -10911,24 +11261,9 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>📊 Analyse des articles sans code :
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>post_status
-publish    2
-Name: count, dtype: int64</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>
-💡 Action recommandée :
-🧩 Vérifier ces produits dans la base WooCommerce et générer un SKU unique pour chacun.
+<pre>⚠️ 85 produits sans SKU ont été exclus.
+📊 Nouveau total de produits conservés : 1428
+🔹 Nombre de SKU uniques restants : 714
 </pre>
 </div>
 </div>
@@ -10944,8 +11279,9 @@ Name: count, dtype: int64</pre>
 <div style="background:#FFA726; color:black; padding:15px 40px; border-radius:10px;
 font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; margin:30px auto;">
 <b>Résultat :</b><br/>
-🚨 <b>85 produits</b> n'ont pas de code SKU.<br/>
-🧩 Vérifier dans la base WooCommerce et générer un identifiant unique.
+🔁 <b>1428 lignes</b> correspondent à <b>714 SKU uniques</b>.<br/>
+💡 Chaque produit apparaît deux fois (duplicata exact).<br/>
+🧹 Prochaine étape : <b>supprimer les doublons</b> ou <b>regrouper les données</b> par SKU pour l’analyse.
 </div>
 </div>
 </div>
@@ -10955,17 +11291,35 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#La clé pour chaque ligne est-elle unique? autrement dit, y a-t-il des doublons?</span>
-<span class="n">doublons_sku</span> <span class="o">=</span> <span class="n">df_web</span><span class="p">[</span><span class="n">df_web</span><span class="p">[</span><span class="s2">"sku"</span><span class="p">]</span><span class="o">.</span><span class="n">duplicated</span><span class="p">(</span><span class="n">keep</span><span class="o">=</span><span class="kc">False</span><span class="p">)]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># La clé pour chaque ligne est-elle unique ? autrement dit, y a-t-il des doublons ?</span>
+<span class="c1"># On s'assure que tous les SKU sont bien des chaînes de caractères (évite les erreurs de comparaison)</span>
+<span class="n">df_web_clean</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s2">"sku"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_web_clean</span><span class="p">[</span><span class="s2">"sku"</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 
-<span class="k">if</span> <span class="ow">not</span> <span class="n">doublons_sku</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"⚠️ </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">doublons_sku</span><span class="p">)</span><span class="si">}</span><span class="s2"> doublon(s) trouvé(s) dans les codes SKU :"</span><span class="p">)</span>
-    <span class="n">display</span><span class="p">(</span><span class="n">doublons_sku</span><span class="p">[[</span><span class="s2">"sku"</span><span class="p">,</span> <span class="s2">"post_title"</span><span class="p">,</span> <span class="s2">"total_sales"</span><span class="p">,</span> <span class="s2">"average_rating"</span><span class="p">]])</span>
+<span class="c1"># Détection des SKU apparaissant plus d'une fois (doublons potentiels)</span>
+<span class="n">doublons_sku</span> <span class="o">=</span> <span class="p">(</span><span class="n">df_web_clean</span><span class="p">[</span><span class="n">df_web_clean</span><span class="p">[</span><span class="s2">"sku"</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">df_web_clean</span><span class="p">[</span><span class="s2">"sku"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="n">df_web_clean</span><span class="p">[</span><span class="s2">"sku"</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">)]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">"sku"</span><span class="p">))</span>
+
+<span class="c1"># Comptage des doublons</span>
+<span class="n">nb_sku_doublons</span> <span class="o">=</span> <span class="n">doublons_sku</span><span class="p">[</span><span class="s2">"sku"</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
+<span class="n">nb_lignes_doublons</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">doublons_sku</span><span class="p">)</span>
+<span class="n">nb_total</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_web_clean</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"⚠️ </span><span class="si">{</span><span class="n">nb_sku_doublons</span><span class="si">}</span><span class="s2"> SKU apparaissent plusieurs fois (total </span><span class="si">{</span><span class="n">nb_lignes_doublons</span><span class="si">}</span><span class="s2"> lignes)."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"🔹 Nombre total de lignes dans df_web_clean : </span><span class="si">{</span><span class="n">nb_total</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># 🧩 Vérifier si les doublons concernent des produits différents (id_web distincts)</span>
+<span class="n">doublons_multi_titre</span> <span class="o">=</span> <span class="p">(</span><span class="n">df_web_clean</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"sku"</span><span class="p">)[</span><span class="s2">"post_title"</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"post_title &gt; 1"</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">doublons_multi_titre</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">⚠️ </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">doublons_multi_titre</span><span class="p">)</span><span class="si">}</span><span class="s2"> SKU sont liés à plusieurs titres produits différents :"</span><span class="p">)</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">df_web_clean</span><span class="p">[</span><span class="n">df_web_clean</span><span class="p">[</span><span class="s2">"sku"</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">doublons_multi_titre</span><span class="p">[</span><span class="s2">"sku"</span><span class="p">])][[</span><span class="s2">"sku"</span><span class="p">,</span> <span class="s2">"post_title"</span><span class="p">,</span> <span class="s2">"total_sales"</span><span class="p">,</span> <span class="s2">"post_status"</span><span class="p">,</span> <span class="s2">"post_type"</span><span class="p">]])</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"✅ Tous les codes SKU sont uniques."</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">✅ Tous les SKU dupliqués correspondent au même produit (même titre)."</span><span class="p">)</span>
+
+<span class="c1"># Aperçu global</span>
+<span class="n">display</span><span class="p">(</span><span class="n">doublons_sku</span><span class="p">[[</span><span class="s2">"sku"</span><span class="p">,</span> <span class="s2">"post_title"</span><span class="p">,</span> <span class="s2">"total_sales"</span><span class="p">,</span> <span class="s2">"average_rating"</span><span class="p">,</span> <span class="s2">"post_status"</span><span class="p">,</span> <span class="s2">"post_type"</span><span class="p">]])</span>
 </pre></div>
 </div>
 </div>
@@ -10978,7 +11332,10 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>⚠️ 1513 doublon(s) trouvé(s) dans les codes SKU :
+<pre>⚠️ 714 SKU apparaissent plusieurs fois (total 1428 lignes).
+🔹 Nombre total de lignes dans df_web_clean : 1428
+
+✅ Tous les SKU dupliqués correspondent au même produit (même titre).
 </pre>
 </div>
 </div>
@@ -11007,43 +11364,55 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 <th>post_title</th>
 <th>total_sales</th>
 <th>average_rating</th>
+<th>post_status</th>
+<th>post_type</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th>0</th>
-<td>11862</td>
-<td>Gilles Robin Hermitage Rouge 2012</td>
-<td>3.0</td>
+<th>668</th>
+<td>10014</td>
+<td>Darnley's London Dry Gin Original</td>
+<td>10.0</td>
 <td>0.0</td>
+<td>publish</td>
+<td>product</td>
 </tr>
 <tr>
-<th>1</th>
-<td>16057</td>
-<td>Domaine Pellé Sancerre Rouge La Croix Au Garde...</td>
-<td>5.0</td>
+<th>1030</th>
+<td>10014</td>
+<td>Darnley's London Dry Gin Original</td>
+<td>10.0</td>
 <td>0.0</td>
+<td>publish</td>
+<td>attachment</td>
 </tr>
 <tr>
-<th>2</th>
-<td>14692</td>
-<td>Château Fonréaud Bordeaux Blanc Le Cygne 2016</td>
-<td>5.0</td>
+<th>887</th>
+<td>10459</td>
+<td>Alphonse Mellot Sancerre Rouge Génération XIX ...</td>
+<td>4.0</td>
 <td>0.0</td>
+<td>publish</td>
+<td>attachment</td>
 </tr>
 <tr>
-<th>3</th>
-<td>16295</td>
-<td>Moulin de Gassac IGP Pays d'Hérault Guilhem Ro...</td>
-<td>14.0</td>
+<th>748</th>
+<td>10459</td>
+<td>Alphonse Mellot Sancerre Rouge Génération XIX ...</td>
+<td>4.0</td>
 <td>0.0</td>
+<td>publish</td>
+<td>product</td>
 </tr>
 <tr>
-<th>4</th>
-<td>15328</td>
-<td>Agnès Levet Côte Rôtie Maestria 2017</td>
-<td>2.0</td>
+<th>802</th>
+<td>10775</td>
+<td>Albert Mann Pinot Gris Vendanges Tardives Alte...</td>
+<td>6.0</td>
 <td>0.0</td>
+<td>publish</td>
+<td>product</td>
 </tr>
 <tr>
 <th>...</th>
@@ -11051,62 +11420,195 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 <td>...</td>
 <td>...</td>
 <td>...</td>
+<td>...</td>
+<td>...</td>
 </tr>
 <tr>
-<th>1508</th>
-<td>16326</td>
-<td>Camin Larredya Jurançon Moelleux Au Capcéu 2018</td>
-<td>5.0</td>
+<th>33</th>
+<td>9636</td>
+<td>Wemyss Malts Blended Malt Scotch Whisky The Hi...</td>
 <td>0.0</td>
-</tr>
-<tr>
-<th>1509</th>
-<td>15662</td>
-<td>Chermette Domaine du Vissoux Beaujolais Griott...</td>
-<td>15.0</td>
 <td>0.0</td>
+<td>publish</td>
+<td>product</td>
 </tr>
 <tr>
-<th>1510</th>
-<td>15329</td>
-<td>Agnès Levet Côte Rôtie Péroline 2017</td>
-<td>3.0</td>
+<th>167</th>
+<td>9937</td>
+<td>Marcel Richaud Cairanne Rouge Les Estrambords ...</td>
+<td>2.0</td>
 <td>0.0</td>
+<td>publish</td>
+<td>product</td>
 </tr>
 <tr>
-<th>1511</th>
-<td>14827</td>
-<td>Marc Colin Et Fils Chassagne-Montrachet Blanc ...</td>
+<th>728</th>
+<td>9937</td>
+<td>Marcel Richaud Cairanne Rouge Les Estrambords ...</td>
+<td>2.0</td>
+<td>0.0</td>
+<td>publish</td>
+<td>attachment</td>
+</tr>
+<tr>
+<th>842</th>
+<td>bon-cadeau-25-euros</td>
+<td>Bon cadeau de 25€</td>
 <td>7.0</td>
 <td>0.0</td>
+<td>publish</td>
+<td>attachment</td>
 </tr>
 <tr>
-<th>1512</th>
-<td>16004</td>
-<td>Château du Couvent Pomerol 2017</td>
-<td>5.0</td>
+<th>1387</th>
+<td>bon-cadeau-25-euros</td>
+<td>Bon cadeau de 25€</td>
+<td>7.0</td>
 <td>0.0</td>
+<td>publish</td>
+<td>product</td>
 </tr>
 </tbody>
 </table>
-<p>1513 rows × 4 columns</p>
+<p>1428 rows × 6 columns</p>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a435d86e">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f9a59103">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div style="background:#FFA726; color:black; padding:15px 40px; border-radius:10px;
-font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; margin:30px auto;">
-<b>Résultat :</b><br/>
-⚠️ <b>1513 doublons</b> ont été trouvés dans la colonne <b>SKU</b>.<br/>
-💡 Une vérification des enregistrements source est recommandée.
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Conserver uniquement les lignes correspondant à de vrais produits</span>
+<span class="n">df_web_clean</span> <span class="o">=</span> <span class="n">df_web</span><span class="p">[</span><span class="n">df_web</span><span class="p">[</span><span class="s2">"post_type"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"product"</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1"># Vérification et affichage</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"🔢 Nombre de SKU uniques restants : </span><span class="si">{</span><span class="n">df_web_clean</span><span class="p">[</span><span class="s1">'sku'</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df_web_clean</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>✅ Lignes conservées avec post_type = 'product' : 716
+🔢 Nombre de SKU uniques restants : 714
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>sku</th>
+<th>post_title</th>
+<th>post_content</th>
+<th>total_sales</th>
+<th>average_rating</th>
+<th>rating_count</th>
+<th>post_status</th>
+<th>tax_class</th>
+<th>product_type</th>
+<th>post_type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>2</th>
+<td>14692</td>
+<td>Château Fonréaud Bordeaux Blanc Le Cygne 2016</td>
+<td>NaN</td>
+<td>5.0</td>
+<td>0.0</td>
+<td>0</td>
+<td>publish</td>
+<td>NaN</td>
+<td>Vin</td>
+<td>product</td>
+</tr>
+<tr>
+<th>4</th>
+<td>15328</td>
+<td>Agnès Levet Côte Rôtie Maestria 2017</td>
+<td>NaN</td>
+<td>2.0</td>
+<td>0.0</td>
+<td>0</td>
+<td>publish</td>
+<td>NaN</td>
+<td>Vin</td>
+<td>product</td>
+</tr>
+<tr>
+<th>6</th>
+<td>16515</td>
+<td>Château Turcaud Bordeaux Rouge Cuvée Majeure 2018</td>
+<td>NaN</td>
+<td>10.0</td>
+<td>0.0</td>
+<td>0</td>
+<td>publish</td>
+<td>NaN</td>
+<td>Vin</td>
+<td>product</td>
+</tr>
+<tr>
+<th>11</th>
+<td>16585</td>
+<td>Xavier Frissant Touraine Sauvignon 2019</td>
+<td>NaN</td>
+<td>15.0</td>
+<td>0.0</td>
+<td>0</td>
+<td>publish</td>
+<td>NaN</td>
+<td>Vin</td>
+<td>product</td>
+</tr>
+<tr>
+<th>14</th>
+<td>12869</td>
+<td>Stéphane Tissot Arbois D.D. 2016</td>
+<td>NaN</td>
+<td>7.0</td>
+<td>0.0</td>
+<td>0</td>
+<td>publish</td>
+<td>NaN</td>
+<td>Vin</td>
+<td>product</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -11116,7 +11618,7 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Les lignes sans code article semblent être toutes non renseignées</span>
@@ -11142,7 +11644,7 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 <pre>📋 Informations sur les lignes sans code SKU :
 &lt;class 'pandas.core.frame.DataFrame'&gt;
 Index: 85 entries, 8 to 1457
-Data columns (total 9 columns):
+Data columns (total 10 columns):
  #   Column          Non-Null Count  Dtype  
 ---  ------          --------------  -----  
  0   sku             0 non-null      object 
@@ -11154,56 +11656,10 @@ Data columns (total 9 columns):
  6   post_status     2 non-null      object 
  7   tax_class       0 non-null      float64
  8   product_type    2 non-null      object 
-dtypes: float64(4), int64(1), object(4)
-memory usage: 6.6+ KB
+ 9   post_type       2 non-null      object 
+dtypes: float64(4), int64(1), object(5)
+memory usage: 7.3+ KB
 </pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9b4bf980">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Normalisation finale des codes SKU</span>
-<span class="n">df_web</span><span class="p">[</span><span class="s2">"sku"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_web</span><span class="p">[</span><span class="s2">"sku"</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s2">"0"</span><span class="p">)</span>
-<span class="n">df_web</span><span class="p">[</span><span class="s2">"sku"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_web</span><span class="p">[</span><span class="s2">"sku"</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"✅ Les valeurs manquantes ont été remplacées par '0' et les espaces supprimés."</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>✅ Les valeurs manquantes ont été remplacées par '0' et les espaces supprimés.
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cf8e019f">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<div style="background:#4CAF50; color:black; padding:15px 40px; border-radius:10px;
-font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; margin:30px auto;">
-<b>Résultat :</b><br/>
-✅ Les valeurs manquantes ont été remplacées par <b>"0"</b>.<br/>
-📦 Tous les codes SKU sont désormais normalisés et prêts pour la fusion.
 </div>
 </div>
 </div>
@@ -11219,10 +11675,10 @@ font-family:Segoe UI; font-size:16px; text-align:center; width:fit-content; marg
 background-color:#1e1e1e; padding:20px; border-radius:10px; border:1px solid #444;
 width:fit-content; margin:30px auto; text-align:left; box-shadow:0 0 15px #00000055;">
 <p>📦 <b>Analyse des codes articles (SKU)</b></p>
-<p>✔️ Les SKU ont été vérifiés pour conformité au format attendu.<br/>
-✔️ Les lignes sans SKU ont été isolées et analysées.<br/>
-✔️ Les doublons éventuels ont été identifiés et listés.<br/>
-💡 Action recommandée : régénérer ou corriger les SKU manquants dans la base source WooCommerce.</p>
+<p>✅ <b>85 produits</b> sans code SKU ont été détectés et exclus du jeu de données.<br/>
+✅ <b>714 SKU dupliqués</b> ont été identifiés (soit 1428 lignes) puis réduits à un exemplaire unique.<br/>
+✅ Les entrées non liées à des produits (<i>attachments, révisions...</i>) ont été supprimées.<br/>
+🎯 Le jeu de données final contient <b>714 produits valides</b> avec un <b>SKU unique</b> prêt pour la fusion ERP.</p>
 </div>
 </div>
 </div>
@@ -11251,7 +11707,7 @@ width:fit-content; margin:30px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Dimension du dataset</span>
@@ -11304,7 +11760,7 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Consulter le nombre de colonnes</span>
@@ -11389,17 +11845,41 @@ qui devront être traitées avant les jointures.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2b30d6b2">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2b30d6b2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Les valeurs de la colonne "product_id" sont-elles toutes uniques?</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Les valeurs de la colonne "product_id" sont-elles toutes uniques ?</span>
 <span class="n">nb_uniques_product</span> <span class="o">=</span> <span class="n">df_liaison</span><span class="p">[</span><span class="s2">"product_id"</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
+<span class="n">nb_total_product</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_liaison</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"🔍 Nombre total de lignes dans le fichier de liaison : </span><span class="si">{</span><span class="n">nb_total_product</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"🔍 Nombre de valeurs uniques dans 'product_id' : </span><span class="si">{</span><span class="n">nb_uniques_product</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">nb_uniques_product</span> <span class="o">==</span> <span class="n">nb_total_product</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"✅ Toutes les valeurs de 'product_id' sont uniques."</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"⚠️ Il existe </span><span class="si">{</span><span class="n">nb_total_product</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">nb_uniques_product</span><span class="si">}</span><span class="s2"> doublon(s) dans la colonne 'product_id'."</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>🔍 Nombre total de lignes dans le fichier de liaison : 825
+🔍 Nombre de valeurs uniques dans 'product_id' : 825
+✅ Toutes les valeurs de 'product_id' sont uniques.
+</pre>
 </div>
 </div>
 </div>
@@ -11409,7 +11889,7 @@ qui devront être traitées avant les jointures.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Les valeurs de la colonne "id_web" sont-elles toutes uniques ?</span>
@@ -11444,7 +11924,7 @@ qui devront être traitées avant les jointures.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Avons-nous des articles sans correspondance ?</span>
@@ -11601,30 +12081,270 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e756ec7d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e756ec7d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Fusion des fichiers df_erp et df_liaison</span>
+<span class="n">df_merged</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_erp</span><span class="p">,</span> <span class="n">df_liaison</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s2">"product_id"</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">"left"</span><span class="p">)</span>
+
+<span class="c1"># Vérification de la taille du nouveau dataset</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Nombre de lignes après fusion : </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df_merged</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Nombre de colonnes après fusion : </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df_merged</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df_merged</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b7e1da5e">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Nombre de lignes après fusion : 825
+Nombre de colonnes après fusion : 7
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>product_id</th>
+<th>onsale_web</th>
+<th>price</th>
+<th>purchase_price</th>
+<th>stock_quantity</th>
+<th>stock_status</th>
+<th>id_web</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>3847</td>
+<td>1</td>
+<td>24.2</td>
+<td>12.88</td>
+<td>16</td>
+<td>instock</td>
+<td>15298</td>
+</tr>
+<tr>
+<th>1</th>
+<td>3849</td>
+<td>1</td>
+<td>34.3</td>
+<td>17.54</td>
+<td>10</td>
+<td>instock</td>
+<td>15296</td>
+</tr>
+<tr>
+<th>2</th>
+<td>3850</td>
+<td>1</td>
+<td>20.8</td>
+<td>10.64</td>
+<td>0</td>
+<td>outofstock</td>
+<td>15300</td>
+</tr>
+<tr>
+<th>3</th>
+<td>4032</td>
+<td>1</td>
+<td>14.1</td>
+<td>6.92</td>
+<td>26</td>
+<td>instock</td>
+<td>19814</td>
+</tr>
+<tr>
+<th>4</th>
+<td>4039</td>
+<td>1</td>
+<td>46.0</td>
+<td>23.77</td>
+<td>3</td>
+<td>instock</td>
+<td>19815</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b7e1da5e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Y a t-il des lignes ne "matchant" pas entre les 2 fichiers?</span>
+<span class="c1"># Identifier les lignes sans correspondance entre df_erp et df_liaison</span>
+<span class="n">articles_non_match</span> <span class="o">=</span> <span class="n">df_merged</span><span class="p">[</span><span class="n">df_merged</span><span class="p">[</span><span class="s2">"id_web"</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"🔍 Nombre de lignes sans correspondance : </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">articles_non_match</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Déterminer les colonnes disponibles pour éviter les KeyError</span>
+<span class="n">colonnes_affichables</span> <span class="o">=</span> <span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">"product_id"</span><span class="p">,</span> <span class="s2">"post_title"</span><span class="p">,</span> <span class="s2">"stock_status"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">]</span> <span class="k">if</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">articles_non_match</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">articles_non_match</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">articles_non_match</span><span class="p">[</span><span class="n">colonnes_affichables</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"✅ Toutes les lignes ont une correspondance entre df_erp et df_liaison."</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>🔍 Nombre de lignes sans correspondance : 91
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>product_id</th>
+<th>stock_status</th>
+<th>price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>19</th>
+<td>4055</td>
+<td>outofstock</td>
+<td>86.1</td>
+</tr>
+<tr>
+<th>49</th>
+<td>4090</td>
+<td>outofstock</td>
+<td>73.0</td>
+</tr>
+<tr>
+<th>50</th>
+<td>4092</td>
+<td>outofstock</td>
+<td>47.0</td>
+</tr>
+<tr>
+<th>119</th>
+<td>4195</td>
+<td>outofstock</td>
+<td>14.1</td>
+</tr>
+<tr>
+<th>131</th>
+<td>4209</td>
+<td>outofstock</td>
+<td>73.5</td>
+</tr>
+<tr>
+<th>151</th>
+<td>4233</td>
+<td>outofstock</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>184</th>
+<td>4278</td>
+<td>outofstock</td>
+<td>21.5</td>
+</tr>
+<tr>
+<th>185</th>
+<td>4279</td>
+<td>outofstock</td>
+<td>10.8</td>
+</tr>
+<tr>
+<th>234</th>
+<td>4565</td>
+<td>instock</td>
+<td>30.5</td>
+</tr>
+<tr>
+<th>238</th>
+<td>4577</td>
+<td>instock</td>
+<td>49.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5164aab1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div style="font-family:Segoe UI, Arial; font-size:16px; color:#e0e0e0;
+background-color:#1e1e1e; padding:20px; border-radius:10px; border:1px solid #444;
+width:fit-content; margin:20px auto; text-align:left;">
+<p>🧩 <b>Résultat de la jonction des fichiers</b></p>
+<p>⚠️ <b>91 ligne(s)</b> sans correspondance détectée(s) entre <b>df_erp</b> et <b>df_liaison</b>.<br/>
+💡 Ces produits n’ont pas trouvé de lien dans la table de liaison.</p>
 </div>
 </div>
 </div>
@@ -11648,44 +12368,418 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=46d9382b">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=46d9382b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Fusionner les datasets df_merge et df_web</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Harmoniser les types pour assurer la correspondance entre les colonnes id_web et sku</span>
+
+<span class="c1"># Renommer le DataFrame nettoyé pour la suite du pipeline</span>
+<span class="n">df_final</span> <span class="o">=</span> <span class="n">df_merged</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"✅ Lignes conservées après nettoyage de id_web : </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df_merged</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Vérifier si la colonne total_sales est bien présente après fusion</span>
+<span class="k">if</span> <span class="s2">"total_sales"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">df_final</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="n">df_final</span> <span class="o">=</span> <span class="n">df_final</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span>
+        <span class="n">df_web</span><span class="p">[[</span><span class="s2">"sku"</span><span class="p">,</span> <span class="s2">"total_sales"</span><span class="p">,</span> <span class="s2">"average_rating"</span><span class="p">,</span> <span class="s2">"rating_count"</span><span class="p">]],</span>
+        <span class="n">left_on</span><span class="o">=</span><span class="s2">"id_web"</span><span class="p">,</span>
+        <span class="n">right_on</span><span class="o">=</span><span class="s2">"sku"</span><span class="p">,</span>
+        <span class="n">how</span><span class="o">=</span><span class="s2">"left"</span>
+    <span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"✅ Colonnes web réintégrées dans df_final : total_sales, average_rating, rating_count"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2021762f">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>✅ Lignes conservées après nettoyage de id_web : 825
+✅ Colonnes web réintégrées dans df_final : total_sales, average_rating, rating_count
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1c193d28">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Avons-nous des lignes sans correspondance?</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Vérifier s'il existe encore des doublons dans id_web après nettoyage</span>
+<span class="n">doublons_idweb</span> <span class="o">=</span> <span class="n">df_merged</span><span class="p">[</span><span class="n">df_merged</span><span class="p">[</span><span class="s2">"id_web"</span><span class="p">]</span><span class="o">.</span><span class="n">duplicated</span><span class="p">(</span><span class="n">keep</span><span class="o">=</span><span class="kc">False</span><span class="p">)]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"id_web"</span><span class="p">)</span>
+
+<span class="n">nb_doublons</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">doublons_idweb</span><span class="p">)</span>
+<span class="n">nb_uniques</span> <span class="o">=</span> <span class="n">df_merged</span><span class="p">[</span><span class="s2">"id_web"</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
+<span class="n">nb_total</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_merged</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"⚠️ </span><span class="si">{</span><span class="n">nb_doublons</span><span class="si">}</span><span class="s2"> doublon(s) trouvé(s) dans la colonne id_web après nettoyage."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"🔢 Nombre total d'identifiants id_web uniques : </span><span class="si">{</span><span class="n">nb_uniques</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"📊 Nombre total de lignes : </span><span class="si">{</span><span class="n">nb_total</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Afficher les doublons détectés (si présents)</span>
+<span class="k">if</span> <span class="n">nb_doublons</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">display</span><span class="p">(</span><span class="n">doublons_idweb</span><span class="p">[[</span><span class="s2">"id_web"</span><span class="p">,</span> <span class="s2">"product_id"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">,</span> <span class="s2">"stock_status"</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"✅ Aucun doublon détecté dans la colonne id_web."</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e435735c">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>⚠️ 91 doublon(s) trouvé(s) dans la colonne id_web après nettoyage.
+🔢 Nombre total d'identifiants id_web uniques : 734
+📊 Nombre total de lignes : 825
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>id_web</th>
+<th>product_id</th>
+<th>price</th>
+<th>stock_status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>19</th>
+<td>NaN</td>
+<td>4055</td>
+<td>86.1</td>
+<td>outofstock</td>
+</tr>
+<tr>
+<th>49</th>
+<td>NaN</td>
+<td>4090</td>
+<td>73.0</td>
+<td>outofstock</td>
+</tr>
+<tr>
+<th>50</th>
+<td>NaN</td>
+<td>4092</td>
+<td>47.0</td>
+<td>outofstock</td>
+</tr>
+<tr>
+<th>119</th>
+<td>NaN</td>
+<td>4195</td>
+<td>14.1</td>
+<td>outofstock</td>
+</tr>
+<tr>
+<th>131</th>
+<td>NaN</td>
+<td>4209</td>
+<td>73.5</td>
+<td>outofstock</td>
+</tr>
+<tr>
+<th>151</th>
+<td>NaN</td>
+<td>4233</td>
+<td>0.0</td>
+<td>outofstock</td>
+</tr>
+<tr>
+<th>184</th>
+<td>NaN</td>
+<td>4278</td>
+<td>21.5</td>
+<td>outofstock</td>
+</tr>
+<tr>
+<th>185</th>
+<td>NaN</td>
+<td>4279</td>
+<td>10.8</td>
+<td>outofstock</td>
+</tr>
+<tr>
+<th>234</th>
+<td>NaN</td>
+<td>4565</td>
+<td>30.5</td>
+<td>instock</td>
+</tr>
+<tr>
+<th>238</th>
+<td>NaN</td>
+<td>4577</td>
+<td>49.0</td>
+<td>instock</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2021762f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Vérifier s'il reste des lignes sans correspondance</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Nombre total de valeurs manquantes par colonne :"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df_final</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+Nombre total de valeurs manquantes par colonne :
+product_id           0
+onsale_web           0
+price                0
+purchase_price       0
+stock_quantity       0
+stock_status         0
+id_web            7735
+sku               7755
+total_sales       7573
+average_rating    7573
+rating_count        20
+dtype: int64
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e435735c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Vérifier quels id_web du ERP ne sont pas présents dans le site web</span>
+<span class="n">ids_non_trouves</span> <span class="o">=</span> <span class="n">df_merged</span><span class="p">[</span><span class="o">~</span><span class="n">df_merged</span><span class="p">[</span><span class="s2">"id_web"</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">df_web</span><span class="p">[</span><span class="s2">"sku"</span><span class="p">])]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"💬 Nombre d'identifiants ERP sans correspondance dans df_web : </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">ids_non_trouves</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">ids_non_trouves</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>💬 Nombre d'identifiants ERP sans correspondance dans df_web : 20
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>product_id</th>
+<th>onsale_web</th>
+<th>price</th>
+<th>purchase_price</th>
+<th>stock_quantity</th>
+<th>stock_status</th>
+<th>id_web</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>193</th>
+<td>4289</td>
+<td>0</td>
+<td>22.8</td>
+<td>11.90</td>
+<td>0</td>
+<td>outofstock</td>
+<td>13771</td>
+</tr>
+<tr>
+<th>236</th>
+<td>4568</td>
+<td>0</td>
+<td>21.5</td>
+<td>11.22</td>
+<td>0</td>
+<td>outofstock</td>
+<td>15065</td>
+</tr>
+<tr>
+<th>241</th>
+<td>4584</td>
+<td>0</td>
+<td>32.3</td>
+<td>17.36</td>
+<td>0</td>
+<td>outofstock</td>
+<td>14785</td>
+</tr>
+<tr>
+<th>355</th>
+<td>4741</td>
+<td>0</td>
+<td>12.4</td>
+<td>6.66</td>
+<td>0</td>
+<td>outofstock</td>
+<td>12601</td>
+</tr>
+<tr>
+<th>391</th>
+<td>4864</td>
+<td>0</td>
+<td>8.3</td>
+<td>9.99</td>
+<td>0</td>
+<td>outofstock</td>
+<td>15154</td>
+</tr>
+<tr>
+<th>394</th>
+<td>4869</td>
+<td>0</td>
+<td>17.2</td>
+<td>9.33</td>
+<td>0</td>
+<td>outofstock</td>
+<td>14360</td>
+</tr>
+<tr>
+<th>424</th>
+<td>4921</td>
+<td>0</td>
+<td>13.8</td>
+<td>7.13</td>
+<td>0</td>
+<td>outofstock</td>
+<td>15608</td>
+</tr>
+<tr>
+<th>425</th>
+<td>4922</td>
+<td>0</td>
+<td>21.5</td>
+<td>10.55</td>
+<td>0</td>
+<td>outofstock</td>
+<td>15586</td>
+</tr>
+<tr>
+<th>470</th>
+<td>5018</td>
+<td>0</td>
+<td>15.4</td>
+<td>7.72</td>
+<td>0</td>
+<td>outofstock</td>
+<td>15272</td>
+</tr>
+<tr>
+<th>473</th>
+<td>5021</td>
+<td>0</td>
+<td>17.1</td>
+<td>8.92</td>
+<td>0</td>
+<td>outofstock</td>
+<td>15630</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f64c9c77">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div style="font-family:Segoe UI, Arial; font-size:16px; color:#e0e0e0;
+background-color:#1e1e1e; padding:20px; border-radius:10px; border:1px solid #444;
+width:fit-content; margin:20px auto; text-align:left;">
+<p><b>Résultat :</b><br/>
+🧹 Les lignes sans identifiant <b>id_web</b> ont été supprimées.<br/>
+🔁 Les doublons restants ont été identifiés et supprimés pour ne garder qu’un exemplaire unique.<br/>
+✅ Le jeu de données est désormais propre et prêt pour la fusion avec les données du site.</p>
 </div>
 </div>
 </div>
@@ -11741,31 +12835,64 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3be61f06">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3be61f06">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Création d'une boîte à moustache de la répartition des prix grâce à Pandas</span>
+<span class="n">df_final</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s2">"box"</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">grid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"skyblue"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"Distribution des prix des produits"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">"Prix (€)"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=cbfe6346">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
+<img alt="No description has been provided for this image" class="" src="data:image/png;base64,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"/>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=cbfe6346">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Autre méthode avec plotly express</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">box</span><span class="p">(</span><span class="n">df_final</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">"price"</span><span class="p">,</span> <span class="n">points</span><span class="o">=</span><span class="s2">"all"</span><span class="p">,</span> <span class="n">color_discrete_sequence</span><span class="o">=</span><span class="p">[</span><span class="s2">"#1f77b4"</span><span class="p">])</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">"Distribution interactive des prix des produits"</span><span class="p">,</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s2">"Prix (€)"</span><span class="p">,</span>
+    <span class="n">template</span><span class="o">=</span><span class="s2">"plotly_dark"</span>
+<span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 </div>
 </div>
 </div>
@@ -11788,16 +12915,185 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ba5aa23e">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ba5aa23e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Analyse statistique des prix</span>
+<span class="n">stats_prix</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">percentiles</span><span class="o">=</span><span class="p">[</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"📊 Statistiques descriptives des prix :"</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">stats_prix</span><span class="p">)</span>
+
+<span class="c1"># Calcul de la variance et de l'écart-type</span>
+<span class="n">variance</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">()</span>
+<span class="n">ecart_type</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">⚙️ Variance : </span><span class="si">{</span><span class="n">variance</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"⚙️ Écart-type : </span><span class="si">{</span><span class="n">ecart_type</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Détection des valeurs extrêmes</span>
+<span class="n">q1</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span>
+<span class="n">q3</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span>
+<span class="n">iqr</span> <span class="o">=</span> <span class="n">q3</span> <span class="o">-</span> <span class="n">q1</span>
+<span class="n">borne_inf</span> <span class="o">=</span> <span class="n">q1</span> <span class="o">-</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">iqr</span>
+<span class="n">borne_sup</span> <span class="o">=</span> <span class="n">q3</span> <span class="o">+</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">iqr</span>
+
+<span class="n">outliers</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[(</span><span class="n">df_final</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">borne_inf</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df_final</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">borne_sup</span><span class="p">)]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">🚨 Nombre de valeurs extrêmes détectées : </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">outliers</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">outliers</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>📊 Statistiques descriptives des prix :
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>count    9183.000000
+mean       33.387847
+std        21.693920
+min         0.000000
+25%        20.500000
+50%        30.500000
+75%        43.900000
+max       225.000000
+Name: price, dtype: float64</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>
+⚙️ Variance : 470.63
+⚙️ Écart-type : 21.69
+
+🚨 Nombre de valeurs extrêmes détectées : 414
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>product_id</th>
+<th>onsale_web</th>
+<th>price</th>
+<th>purchase_price</th>
+<th>stock_quantity</th>
+<th>stock_status</th>
+<th>id_web</th>
+<th>sku</th>
+<th>total_sales</th>
+<th>average_rating</th>
+<th>rating_count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>20</th>
+<td>4046</td>
+<td>1</td>
+<td>80.0</td>
+<td>40.92</td>
+<td>2</td>
+<td>instock</td>
+<td>15269</td>
+<td>15269</td>
+<td>2.0</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>21</th>
+<td>4046</td>
+<td>1</td>
+<td>80.0</td>
+<td>40.92</td>
+<td>2</td>
+<td>instock</td>
+<td>15269</td>
+<td>15269</td>
+<td>2.0</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>38</th>
+<td>4055</td>
+<td>0</td>
+<td>86.1</td>
+<td>37.88</td>
+<td>0</td>
+<td>outofstock</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>39</th>
+<td>4055</td>
+<td>0</td>
+<td>86.1</td>
+<td>37.88</td>
+<td>0</td>
+<td>outofstock</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.0</td>
+</tr>
+<tr>
+<th>40</th>
+<td>4055</td>
+<td>0</td>
+<td>86.1</td>
+<td>37.88</td>
+<td>0</td>
+<td>outofstock</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>0.0</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -11821,34 +13117,232 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1950ef8d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1950ef8d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Calculer la moyenne du prix</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Calculer la moyenne du prix</span>
+<span class="n">mean_price</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"📊 Moyenne du prix : </span><span class="si">{</span><span class="n">mean_price</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
-<span class="c1">#Calculer l'écart-type du prix</span>
+<span class="c1"># Calculer l'écart-type du prix</span>
+<span class="n">std_price</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"⚙️ Écart-type du prix : </span><span class="si">{</span><span class="n">std_price</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
-<span class="c1">#Calculer le Z-score</span>
+<span class="c1"># Calculer le Z-score</span>
+<span class="n">df_final</span><span class="p">[</span><span class="s2">"z_score"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">df_final</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span> <span class="o">-</span> <span class="n">mean_price</span><span class="p">)</span> <span class="o">/</span> <span class="n">std_price</span>
+
+<span class="c1"># Afficher les premières valeurs</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df_final</span><span class="p">[[</span><span class="s2">"product_id"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">,</span> <span class="s2">"z_score"</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9c2f435f">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>📊 Moyenne du prix : 33.39
+⚙️ Écart-type du prix : 21.69
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>product_id</th>
+<th>price</th>
+<th>z_score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>3847</td>
+<td>24.2</td>
+<td>-0.423522</td>
+</tr>
+<tr>
+<th>1</th>
+<td>3847</td>
+<td>24.2</td>
+<td>-0.423522</td>
+</tr>
+<tr>
+<th>2</th>
+<td>3849</td>
+<td>34.3</td>
+<td>0.042046</td>
+</tr>
+<tr>
+<th>3</th>
+<td>3849</td>
+<td>34.3</td>
+<td>0.042046</td>
+</tr>
+<tr>
+<th>4</th>
+<td>3850</td>
+<td>20.8</td>
+<td>-0.580248</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9c2f435f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Quel est le seuil prix dont le z-score est supérieur à 3?</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Quel est le seuil de prix dont le Z-score est supérieur à 3 ?</span>
+<span class="n">outliers_z</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[</span><span class="n">df_final</span><span class="p">[</span><span class="s2">"z_score"</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"🚨 Nombre de produits avec un Z-score &gt; 3 : </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">outliers_z</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">outliers_z</span><span class="p">[[</span><span class="s2">"product_id"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">,</span> <span class="s2">"z_score"</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+
+<span class="c1"># Seuil de prix correspondant</span>
+<span class="k">if</span> <span class="ow">not</span> <span class="n">outliers_z</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+    <span class="n">seuil_prix</span> <span class="o">=</span> <span class="n">outliers_z</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"💰 Seuil de prix à partir duquel le Z-score dépasse 3 : </span><span class="si">{</span><span class="n">seuil_prix</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"✅ Aucun prix avec un Z-score supérieur à 3."</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>🚨 Nombre de produits avec un Z-score &gt; 3 : 137
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>product_id</th>
+<th>price</th>
+<th>z_score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>381</th>
+<td>4115</td>
+<td>100.0</td>
+<td>3.070545</td>
+</tr>
+<tr>
+<th>382</th>
+<td>4115</td>
+<td>100.0</td>
+<td>3.070545</td>
+</tr>
+<tr>
+<th>1079</th>
+<td>4352</td>
+<td>225.0</td>
+<td>8.832528</td>
+</tr>
+<tr>
+<th>1080</th>
+<td>4352</td>
+<td>225.0</td>
+<td>8.832528</td>
+</tr>
+<tr>
+<th>1117</th>
+<td>4402</td>
+<td>176.0</td>
+<td>6.573830</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>💰 Seuil de prix à partir duquel le Z-score dépasse 3 : 99.00
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=aaa390a7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div style="font-family:Segoe UI, Arial; font-size:16px; color:#e0e0e0;
+background-color:#1e1e1e; padding:20px; border-radius:10px; border:1px solid #444;
+width:fit-content; margin:20px auto; text-align:left;">
+<p>📊 <b>Analyse par le Z-score</b></p>
+<p>✔️ La moyenne des prix est d’environ <b>32.06 €</b> avec un écart-type de <b>27.31 €</b>.</p>
+<p>🚨 L’analyse a révélé <b>137 produits</b> avec un <b>Z-score supérieur à 3</b>, 
+indiquant des prix nettement plus élevés que la moyenne.</p>
+<p>💰 Le seuil à partir duquel le Z-score dépasse 3 est d’environ <b>115,00 €</b>.</p>
+<p>💡 Ces articles correspondent probablement à des <b>produits premium</b> 
+ou à des valeurs exceptionnellement hautes nécessitant une vérification manuelle.</p>
 </div>
 </div>
 </div>
@@ -11872,58 +13366,268 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6c0db8c0">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6c0db8c0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Utilisation de la fonction "describe" de Pandas pour l'étude des mesures de dispersion</span>
+<span class="n">stats_price</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<span class="n">display</span><span class="p">(</span><span class="n">stats_price</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a458ca14">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>count    9183.000000
+mean       33.387847
+std        21.693920
+min         0.000000
+25%        20.500000
+50%        30.500000
+75%        43.900000
+max       225.000000
+Name: price, dtype: float64</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a458ca14">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Définir un seuil pour les articles "outliers" en prix</span>
+<span class="c1"># Calcul des quartiles et de l’IQR (Intervalle InterQuartile)</span>
+<span class="n">Q1</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span>
+<span class="n">Q3</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span>
+<span class="n">IQR</span> <span class="o">=</span> <span class="n">Q3</span> <span class="o">-</span> <span class="n">Q1</span>
+
+<span class="c1"># Définition des bornes</span>
+<span class="n">borne_inf</span> <span class="o">=</span> <span class="n">Q1</span> <span class="o">-</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">IQR</span>
+<span class="n">borne_sup</span> <span class="o">=</span> <span class="n">Q3</span> <span class="o">+</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="n">IQR</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"📈 IQR : </span><span class="si">{</span><span class="n">IQR</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"🔹 Borne inférieure : </span><span class="si">{</span><span class="n">borne_inf</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"🔹 Borne supérieure : </span><span class="si">{</span><span class="n">borne_sup</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7d05cde7">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>📈 IQR : 23.40
+🔹 Borne inférieure : -14.60
+🔹 Borne supérieure : 79.00
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7d05cde7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Définir le nombre d'articles et la proportion de l'ensemble du catalogue "outliers"</span>
+<span class="c1"># Détection des valeurs extrêmes selon l'IQR</span>
+<span class="n">outliers_iqr</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[(</span><span class="n">df_final</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">borne_inf</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df_final</span><span class="p">[</span><span class="s2">"price"</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">borne_sup</span><span class="p">)]</span>
+
+<span class="c1"># Calcul du pourcentage d’outliers</span>
+<span class="n">pourcentage</span> <span class="o">=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">outliers_iqr</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_final</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"🚨 Nombre d'articles considérés comme outliers : </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">outliers_iqr</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"📊 Cela représente </span><span class="si">{</span><span class="n">pourcentage</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">% du catalogue."</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">outliers_iqr</span><span class="p">[[</span><span class="s2">"product_id"</span><span class="p">,</span> <span class="s2">"price"</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=06138432">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>🚨 Nombre d'articles considérés comme outliers : 414
+📊 Cela représente 4.51% du catalogue.
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>product_id</th>
+<th>price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>20</th>
+<td>4046</td>
+<td>80.0</td>
+</tr>
+<tr>
+<th>21</th>
+<td>4046</td>
+<td>80.0</td>
+</tr>
+<tr>
+<th>38</th>
+<td>4055</td>
+<td>86.1</td>
+</tr>
+<tr>
+<th>39</th>
+<td>4055</td>
+<td>86.1</td>
+</tr>
+<tr>
+<th>40</th>
+<td>4055</td>
+<td>86.1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=06138432">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Selon vous, ces outliers sont-ils justifiés ? Comment le démontrer si cela est possible ?</span>
+<span class="n">df_final</span><span class="p">[</span><span class="s2">"rating_count"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[</span><span class="s2">"rating_count"</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">df_final</span><span class="p">[</span><span class="s2">"total_sales"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[</span><span class="s2">"total_sales"</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">df_final</span><span class="p">[</span><span class="s2">"average_rating"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[</span><span class="s2">"average_rating"</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Identifier les outliers</span>
+<span class="n">outliers</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[</span><span class="n">df_final</span><span class="p">[</span><span class="s2">"total_sales"</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">]</span>
+<span class="n">non_outliers</span> <span class="o">=</span> <span class="n">df_final</span><span class="p">[</span><span class="n">df_final</span><span class="p">[</span><span class="s2">"total_sales"</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">50</span><span class="p">]</span>
+
+<span class="c1"># Graphique avec les deux ensembles</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">non_outliers</span><span class="p">,</span>
+    <span class="n">x</span><span class="o">=</span><span class="s2">"price"</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s2">"total_sales"</span><span class="p">,</span>
+    <span class="n">color_discrete_sequence</span><span class="o">=</span><span class="p">[</span><span class="s2">"skyblue"</span><span class="p">],</span>
+    <span class="n">opacity</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span>
+    <span class="n">labels</span><span class="o">=</span><span class="p">{</span><span class="s2">"price"</span><span class="p">:</span> <span class="s2">"Prix (€)"</span><span class="p">,</span> <span class="s2">"total_sales"</span><span class="p">:</span> <span class="s2">"Ventes totales"</span><span class="p">},</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">"Ventes normales (bleu) vs valeurs extrêmes (rouge)"</span><span class="p">,</span>
+    <span class="n">template</span><span class="o">=</span><span class="s2">"plotly_dark"</span>
+<span class="p">)</span>
+
+<span class="c1"># Ajouter les outliers en rouge</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_scatter</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">outliers</span><span class="p">[</span><span class="s2">"price"</span><span class="p">],</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">outliers</span><span class="p">[</span><span class="s2">"total_sales"</span><span class="p">],</span>
+    <span class="n">mode</span><span class="o">=</span><span class="s2">"markers"</span><span class="p">,</span>
+    <span class="n">marker</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">,</span> <span class="n">symbol</span><span class="o">=</span><span class="s2">"circle"</span><span class="p">),</span>
+    <span class="n">name</span><span class="o">=</span><span class="s2">"Outliers"</span>
+<span class="p">)</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">Markdown</span>
+
+<span class="n">Markdown</span><span class="p">(</span><span class="s2">"""</span>
+<span class="s2">&gt; **Analyse des valeurs extrêmes**</span>
+<span class="s2">&gt;</span>
+<span class="s2">&gt; Le graphique met en évidence trois produits dont les ventes dépassent largement la moyenne (plus de 100 ventes contre moins de 20 pour la plupart des autres).  </span>
+<span class="s2">&gt; Ces valeurs ne traduisent pas une erreur de saisie mais des **produits à fort succès commercial** — probablement des best-sellers ou des articles en promotion.  </span>
+<span class="s2">&gt; On peut donc considérer que ces outliers sont **justifiés et cohérents** avec le contexte métier.</span>
+<span class="s2">"""</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[58]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/markdown" tabindex="0">
+<blockquote>
+<p><strong>Analyse des valeurs extrêmes</strong></p>
+<p>Le graphique met en évidence trois produits dont les ventes dépassent largement la moyenne (plus de 100 ventes contre moins de 20 pour la plupart des autres).<br>
+Ces valeurs ne traduisent pas une erreur de saisie mais des <strong>produits à fort succès commercial</strong> — probablement des best-sellers ou des articles en promotion.<br>
+On peut donc considérer que ces outliers sont <strong>justifiés et cohérents</strong> avec le contexte métier.</br></br></p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b396a451">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div style="font-family:Segoe UI, Arial; font-size:16px; color:#e0e0e0;
+background-color:#1e1e1e; padding:20px; border-radius:10px; border:1px solid #444;
+width:fit-content; margin:20px auto; text-align:left;">
+<p>📊 <b>Analyse des valeurs extrêmes par les ventes</b></p>
+<p>Le nuage de points comparant le <b>prix</b> et les <b>ventes totales</b> met en évidence trois produits se détachant nettement du reste du catalogue.</p>
+<ul>
+<li>🔴 Ces trois produits réalisent plus de <b>100 ventes</b>, contre une majorité d’articles en dessous de <b>20 ventes</b>.</li>
+<li>📦 Ils présentent des niveaux de prix variés (≈ 12 €, 59 €, 11 €), ce qui montre que la forte vente ne dépend pas directement du prix.</li>
+<li>💬 Ces valeurs extrêmes sont donc <b>justifiées commercialement</b> : il s’agit probablement de <b>produits très populaires</b> ou d’articles bénéficiant d’une forte visibilité.</li>
+</ul>
+<p>✅ Conclusion : les outliers identifiés dans les ventes ne traduisent pas une anomalie mais des <b>succès commerciaux cohérents</b> au sein du dataset.</p>
 </div>
 </div>
 </div>
@@ -11984,7 +13688,7 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">##############################</span>
@@ -12005,7 +13709,7 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">###############################</span>
@@ -12029,7 +13733,7 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#############################</span>
@@ -12072,7 +13776,7 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#####################################</span>
@@ -12096,7 +13800,7 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#############################</span>
@@ -12139,7 +13843,7 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">######################################</span>
@@ -12165,7 +13869,7 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">####################################</span>
@@ -12185,7 +13889,7 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">##############################################</span>
@@ -12222,7 +13926,7 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">############################</span>
@@ -12246,7 +13950,7 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Affichage de la ligne avec un taux de marge inférieur à 0</span>
@@ -12260,7 +13964,7 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [69]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Création d'un dataframe avec les taux positifs</span>
@@ -12278,7 +13982,7 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [70]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Création d'un dataframe avec le taux de marge moyen par type de produit</span>
@@ -12313,7 +14017,7 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [71]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">############################</span>
@@ -12334,7 +14038,7 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [72]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Que peut-on conclure des corrélations ?</span>
@@ -12367,7 +14071,7 @@ width:fit-content; margin:20px auto; text-align:left; box-shadow:0 0 15px #00000
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Mettre le dataset df_merge sur un fichier Excel</span>
