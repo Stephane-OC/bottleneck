@@ -56,19 +56,19 @@ This project provides an **in-depth analysis of sales performance and stock mana
 
 ## 🗂️ Table of Contents
 
-### **Étape 1 — Importation des librairies et chargement des fichiers**
-- 1.1 Importation des librairies  
-- 1.2 Chargement des fichiers  
+### **Step 1 — Importing Libraries and Loading Files**
+- 1.1 Importing Libraries
+- 1.2 1.2 Loading Files
 
-### **Étape 2 — Analyse exploratoire des fichiers**
-- 2.1 Analyse du fichier `erp.xlsx`  
-  - 2.1.1 Variable exploration  
-    - PRIX  
+### **Step 2 — Exploratory Data Analysis**
+- 2.1 Analysis of the `erp.xlsx` File
+  - 2.1.1 Variable Exploration
+    - PRICE  
     - STOCK  
     - ONSALE_WEB  
-    - PRIX D’ACHAT  
-- 2.2 Analyse du fichier `web.xlsx`  
-- 2.3 Analyse du fichier `liaison.xlsx`  
+    - PURCHASE PRICE
+- 2.2 2.2 Analysis of the `web.xlsx` File
+- 2.3 Analysis of the `liaison.xlsx` File
 
 ### **Étape 3 — Jonction des fichiers**
 - 3.1 Merge `df_erp` + `df_liaison`  
